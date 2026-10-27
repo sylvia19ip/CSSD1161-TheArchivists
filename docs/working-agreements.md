@@ -27,3 +27,13 @@ Repository: [CSSD1161-TheArchivists](https://github.com/sylvia19ip/CSSD1161-TheA
 - Professional and concise
 - Titles should be short
 - Descriptions should adequately summarize changes
+
+## Design Ideas:
+### October 27, 2026
+Facilitator: Iven
+Contributors: Alyssa, Prahalad
+Scribe: Sylvia
+- Clickable sections for accessing libraries and starting projects (Alyssa)
+- Implement section to return to previously opened content (Iven)
+- Add bottom bar to go forward and back between chapters in reader (Sylvia)
+- Implement menu to store content on device (Prahalad)
