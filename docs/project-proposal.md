@@ -305,30 +305,48 @@ To be determined based on the final application design and any user information 
 
 ## 5. Software Development Approach
 
-**Approach:**
+**Approach:** 
+<br>Agile software development cycle
 
 **Explain Why:**
+- This software development cycle avoids frontloading large amounts of planning and design, which fits in well with the week-by-week format of both the group meetings and the course. 
 
 **Preferred Technologies/Tools:**
-
+- Github Projects (organization)
+- Discord (communication)
+- Figma (prototyping)
 ---
 
 ## 6. Communication Plan
 
 **Stand-ups:**
+- Weekly stand-ups in order to sync progress during class
 
 **Weekly Lab Brief:**
+- Online/Virtual sessions of discussions and contributing in terms of what each person has done (1-3 times weekly)
+- Review any deadlines a day before they are due
 
 **Channels of Communication:**
+- Github
+- Discord
+- Discuss in-person during lab and after class
 
 **Conflict Resolution:**
+- Attempt to resolve interpersonally (ex. Person A talks privately with Person B to resolve the conflict)
+- Escalate to discussion within the group if the conflict cannot be resolved
+- If the conflict still cannot be resolved, escalate to either a TA or the professor
 
 ---
 
 ## 7. Ethics, Privacy & AI Use
 
-**Ethics:**
+**Ethics:** 
+- Seek to minimize harm during development and after release of product <br>
+- Remain transparent about technologies used during and after development
 
 **Privacy:**
+- Do not collect or store any user information 
 
 **AI Use:**
+- Any use of artificial intelligence should be disclosed in the relevant documentation 
+    - (ex. use of artificial intelligence in the architecture should be documented in architecture.md)
