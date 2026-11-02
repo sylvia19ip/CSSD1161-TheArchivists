@@ -9,8 +9,9 @@
 ## 0) Revision History
 | Version | Date | Author | Summary of Changes |
 |---|---|---|---|
+| 0.1 | 2026-11-01 | Sylvia Ip | Initial draft |
 | 0.2 | 2026-11-02 | Prahalad Prasanna | Added Figma designs and screenshots, documented user flows, information architecture, UI specifications, interaction design, and system overview. |
-
+| 0.3 | 2026-11-02 | Sylvia Ip | Updated 6.2, 
 ---
 
 ## 1) Project Overview
@@ -311,6 +312,10 @@ A bottom navigation bar allows users to access Home, Browse, Library, and Upload
 
 The design aims to make navigation simple and consistent across all six screens.
 
+The Figma prototype includes six connected screens with working navigation buttons, allowing users to explore the application's main features.
+
+However, features such as searching for comics, uploading chapters, and saving reading progress are only visual demonstrations and do not process or store real data.
+
 ### 6.3 Forms and Feedback
 
 The Creator Portal includes fields for entering comic information and a Submit button. The Browse screen also includes a search bar.
@@ -357,7 +362,7 @@ For the current project, our focus is on creating a clear and understandable pro
 ---
 
 ## 8) GitHub Workflow (Course Conventions)
-- **Repository:** _URL_ • **Default Branch:** `main`  
+- **Repository:** https://github.com/sylvia19ip/CSSD1161-TheArchivists • **Default Branch:** `main`  
 - **Branching:** `feature/xyz-123`, small PRs (< 200 lines), request review  
 - **Issues & Milestones:** link each PR to an issue; use labels (feature/bug/docs)  
 - **PR Checklist:** lint passes, screenshots (if UI), tests (if any), clear description
@@ -371,8 +376,12 @@ For the current project, our focus is on creating a clear and understandable pro
 **9.2 Functional Checks (Happy/Edge Paths)**  
 | Case ID | Story | Steps | Expected |
 |---|---|---|---|
-| TC-1 | US-1 |  |  |
-
+| TC-1 | US-1 | Navigate to popular stories tab | Find Figma slide for popular stories | 
+| TC-1 | US-2 | Navigate to filtering and search tab | Find Figma slide for searching | 
+| TC-1 | US-3 | Navigate to last read button on home screen | Successfully open last read story
+| TC-1 | US-4 | Add location for content | Add location for popular series and user rankings | 
+| TC-1 | US-5 | Subscribe to a series| Successfully subscribe to a series | 
+| TC-1 | US-6 | Open creator panel and upload a story | A story is successfully uploaded
 ---
 
 ## 10) Accessibility & Inclusion
@@ -385,33 +394,36 @@ For the current project, our focus is on creating a clear and understandable pro
 ## 11) Risks & Mitigations
 | Risk | Impact | Likelihood | Mitigation |
 |---|---|---|---|
-|  |  |  |  |
+| Leak of user data | Exposed user information | Low | Collect as little data as possible |
 
 ---
 
 ## 12) Milestones & Schedule
 | Milestone | Date | Deliverable |
 |---|---|---|
-| Design Freeze |  | Figma screens & flows |
-| MVP Build |  |  |
-| Demo |  |  |
+| Design Freeze | 2026-11-02 | Figma screens & flows |
+| MVP Build | 2026-11-24 | Complete Figma prototype with all features |
+| Demo | 2026-12-01 | Complete product with all features |
 
 ---
 
 ## 13) Submission Checklist
-- [ ] Figma links (design + prototype)  
-- [ ] 2–3 screenshots per key screen  
-- [ ] User stories + acceptance criteria  
-- [ ] Screen inventory & flows  
-- [ ] Style guide & interaction states  
-- [ ] GitHub repo URL and PR/Issue links  
-- [ ] Usability + functional check results  
-- [ ] Accessibility notes  
-- [ ] Risks & timeline
+- [X] Figma links (design + prototype)  
+- [X] 2–3 screenshots per key screen  
+- [X] User stories + acceptance criteria  
+- [X] Screen inventory & flows  
+- [X] Style guide & interaction states  
+- [X] GitHub repo URL and PR/Issue links  
+- [X] Usability + functional check results  
+- [X] Accessibility notes  
+- [X] Risks & timeline
 
 ---
 
 ## Appendix
 **A) Glossary**  
-**B) AI‑Assistance Disclosure** (_tools used and how_)  
+
+**B) AI‑Assistance Disclosure**
+<br>No artificial intelligence was used in the making of this document.
+
 **C) References**
