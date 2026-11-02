@@ -31,14 +31,21 @@ Visual comic/manga/manhua/manhwa readers lack a centralized platform to both rea
 **1.3 Value Proposition**  
 Many existing reading platforms have issues such as inaccurate genre categorization, inefficient use of screen space, and difficulty returning to previously read chapters. Our goal is to address these problems by creating an intuitive interface that allows users to browse multiple series, filter through different genres and tags, and keep track of their reading progress. The application will include a list-style interface displaying information such as the title, author, genre, and cover image of each series. We also plan to include a personal bookshelf and a recent reads feature that allows users to return to where they left off. Our main target audience consists of manga/manhwa readers who follow multiple series. We also want to consider the needs of content creators who upload their work.
 
-**1.4 Goals & Non‑Goals**  
-- **Goals (in-scope):** 
-  - Be able to browse through chapters
-  - Be able to upload comics to read
-- **Non‑Goals (out-of-scope):**
-  - Filtering of tags
-  - Internet connectivity features
-  - Long-term storage of data (ex. logins, saving progress)
+**1.4 Goals & Non-Goals**
+
+- **Goals (in-scope):**
+  - Create a clickable Figma prototype for a mobile manga/manhwa reading application.
+  - Allow users to browse through series and chapters.
+  - Demonstrate a basic comic upload interface.
+  - Design a simple and intuitive navigation system.
+  - Show example filtering and reading progress interfaces using sample data.
+
+- **Non-Goals (out-of-scope):**
+  - Fully functional genre and tag filtering.
+  - Internet connectivity features or external APIs.
+  - Long-term storage of user data, including logins and saved reading progress.
+  - A fully developed mobile application.
+  - A backend or database.
 ---
 
 ## 2) Requirements
@@ -64,6 +71,15 @@ _Trace to user stories._
 - **US-3**
   - **Acceptance Criterion 1:** Given that when a series I'm interested in uploads a new chapter, then I should get a notification about it.
   - **Acceptance Criterion 2:** Given that I'm interested in other works by the same author, when they upload a new work, then I should recommend it.
+- **US-4:**
+  - **Acceptance Criterion 1:** Given that I'm entering the app, when I go into my series, then I can easily find the chapter I left off.
+  - **Acceptance Criterion 2:** Given that I'm reading multiple series at once, when I'm switching between them, then my reading progress for both should be saved.
+- **US-5:**
+  - **Acceptance Criterion 1:** Given that I have a new chapter to upload, when I go through the uploading process, then the process should be quick and intuitive.
+  - **Acceptance Criterion 2:** Given that I am posting a new work, when I upload it, then I can add tags to make my series more discoverable.
+- **US-6:**
+  - **Acceptance Criterion 1:** Given that I'm following multiple series, when I open my bookshelf, then I can see all the series I have saved.
+  - **Acceptance Criterion 2:** Given that I select a series from my bookshelf, when I open it, then I can view its chapters.
 
 **2.3 Assumptions & Constraints**  
 - _Tech limits, time, skills, devices, data, privacy._
@@ -74,76 +90,269 @@ _Trace to user stories._
 - Due to a lack of mobile development experience, this will not be a real mobile app. 
 ---
 
+
 ## 3) Figma Design
-> Provide **view-only Figma links** and 2–3 **exported screenshots** per key screen.
 
-**3.1 Figma Links**  
-- **Design file:** _https://www.figma.com/file/…_  
-- **Prototype (Present mode):** _https://www.figma.com/proto/…_  
-- **Design System / Components (optional):** _https://www.figma.com/file/…_
+### 3.1 Figma Links
 
-**3.2 Screen Inventory**
-| Screen ID | Name | Purpose | Status (Draft/Final) | Link |
-|---|---|---|---|---|
-| S-1 |  |  |  |  |
-| S-2 |  |  |  |  |
+- **Design File:** [The Archivists - Figma Design](https://www.figma.com/design/HYUZvaq8RQHxSgLbzuAs99/The-Archivists?node-id=0-1&p=f)
+- **Prototype (Present Mode):** [The Archivists - Figma Prototype](https://www.figma.com/proto/HYUZvaq8RQHxSgLbzuAs99/The-Archivists?node-id=4-246&t=bh6uxvd96HLrXGSq-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1)
+- **Design System / Components:** We use basic colours, buttons, and layouts consistently throughout the prototype.
 
-**3.3 User Flows**  
-_Attach Figma flow(s) and list success criteria for each flow._
+### 3.2 Screen Inventory
 
-**3.4 Accessibility in Design**  
-- Color contrast (target WCAG 2.1 AA)  
-- Keyboard focus order indicated  
-- Labels, hints, and error messaging specified
+Our Figma prototype contains six mobile screens designed to demonstrate the main features and layout of our manga/manhwa reading application.
 
-> **Paste 2–3 key Figma screenshots below (export PNGs)**
-![Home screen](./imgs/home.png)
-![Task flow](./imgs/flow.png)
+| Screen ID | Name | Purpose | Status |
+|---|---|---|---|
+| S-1 | Home | Allows users to choose between the Reader and Creator sections of the application. | Draft |
+| S-2 | Browse Series | Displays available manga/manhwa series with titles, genres, and chapter counts. | Draft |
+| S-3 | Series Details | Shows information about a selected series, including its description and available chapters. | Draft |
+| S-4 | Chapter Reader | Demonstrates the reading interface with sample comic panels and chapter navigation buttons. | Draft |
+| S-5 | Creator Portal | Displays a basic form for entering comic information and uploading chapters. | Draft |
+| S-6 | My Library | Shows saved series and recently read chapters using sample data. | Draft |
+
+All six screens can be viewed in our [Figma Design File](https://www.figma.com/design/HYUZvaq8RQHxSgLbzuAs99/The-Archivists?node-id=0-1&p=f).
+
+### 3.3 User Flows
+
+The prototype is designed around three simple user flows to demonstrate how readers and creators would navigate the application.
+
+**Flow 1: Browsing and Reading a Series**
+
+1. User starts at the Home screen.
+2. User selects "Browse Series" to enter the Reader Portal.
+3. User chooses a series from the available list.
+4. User views the series details and chapter list.
+5. User selects "Start Reading" to open the Chapter Reader.
+
+**Success Criteria:** The user can find a series, view its available chapters, and reach the reading screen.
+
+**Flow 2: Accessing the Library**
+
+1. User selects the Library tab from the bottom navigation.
+2. User views the Continue Reading and Saved Series sections.
+3. User identifies previously saved series and their last-read chapter.
+
+**Success Criteria:** The user can locate saved series and identify their previous reading progress.
+
+**Flow 3: Creator Uploading**
+
+1. User starts at the Home screen.
+2. User selects "Creator Portal."
+3. User views the form for comic title, genre, description, and chapter information.
+4. User views the comic file placeholder and Submit button.
+
+**Success Criteria:** The user understands how comic information would be entered for uploading.
+
+These flows describe the intended navigation of the application. Since this is a Figma prototype, actual file uploads, saved reading progress, and database functionality are outside the project's scope.
+
+### 3.4 Accessibility in Design
+
+Our team considered basic accessibility and usability principles when designing the prototype.
+
+- **Colour Contrast:** Dark text on light backgrounds helps make content easier to read. Muted blue is used for primary buttons and selected navigation items.
+- **Consistent Navigation:** A bottom navigation bar containing Home, Browse, Library, and Upload appears throughout the prototype.
+- **Clear Labels:** Buttons and navigation items use simple labels such as "Browse Series," "Start Reading," "Creator Portal," and "Submit."
+- **Readable Text:** Headings, descriptions, and button labels use consistent text sizes to distinguish different types of information.
+- **Error Messaging:** The creator upload form includes labelled fields. Validation and error messages may be added in future revisions.
+- **Keyboard Focus Order:** Keyboard navigation has not yet been implemented or tested in the Figma prototype.
+
+### 3.5 Figma Screenshots
+
+The following screenshots show the six main screens of our Figma prototype.
+
+**Home Screen**
+
+![Home Screen](../resources/design-document/home.png)
+
+**Browse Series**
+
+![Browse Series](../resources/design-document/browse.png)
+
+**Series Details**
+
+![Series Details](../resources/design-document/series-details.png)
+
+**Chapter Reader**
+
+![Chapter Reader](../resources/design-document/chapter-reader.png)
+
+**Creator Portal**
+
+![Creator Portal](../resources/design-document/creator-portal.png)
+
+**My Library**
+
+![My Library](../resources/design-document/library.png)
+
 
 ---
+
 
 ## 4) Information Architecture & Data
-**4.1 Sitemap / Navigation**  
-_Draw or link a simple diagram (can be Figma)._
 
-**4.2 Content / Data Model**  
-| Entity | Key Fields | Notes |
+### 4.1 Navigation Structure
+
+Our application is organized into six main screens. Users can navigate between the Reader and Creator sections from the Home screen. A bottom navigation bar provides access to Home, Browse, Library, and Upload.
+
+The intended navigation structure is:
+
+Home
+- Browse Series
+  - Series Details
+    - Chapter Reader
+- Creator Portal
+- My Library
+  - Series Details
+    - Chapter Reader
+
+The Browse screen allows users to explore available manga and manhwa. Selecting a series leads to its details page, where users can view chapters and begin reading.
+
+The Library screen displays saved series and reading progress, while the Creator Portal provides a basic form for submitting comic information.
+
+The navigation structure represents the intended user experience. Some interactions are demonstrated visually and may not be fully connected in the Figma prototype.
+
+### 4.2 Data Structure
+
+Our prototype uses sample information to demonstrate how manga/manhwa series and chapters would be displayed.
+
+| Data | Information Stored | Purpose |
 |---|---|---|
-| User | id, name, email |  |
-| Item | id, title, tags |  |
+| Series | Title, genre, description, chapter count, cover image | Displays information about each manga/manhwa series. |
+| Chapter | Chapter number, chapter title, comic panels | Organizes the reading content for a series. |
+| Library | Saved series, last-read chapter | Demonstrates how users could access saved content and continue reading. |
+| Creator Submission | Comic title, genre, description, chapter information | Demonstrates the information creators would enter when uploading a comic. |
+
+All information shown in the Figma prototype is sample data. No actual database, user account system, or file storage has been implemented.
+
+### 4.3 Sample Data
+
+The prototype includes a small selection of fictional manga/manhwa series to demonstrate the browsing and reading experience.
+
+Sample information includes:
+- Series titles and genres displayed on the Browse screen.
+- Series descriptions and chapter lists displayed on the Series Details screen.
+- Placeholder comic panels displayed in the Chapter Reader.
+- Saved series and reading progress displayed in My Library.
+- Example input fields displayed in the Creator Portal.
+
+These examples help demonstrate how the application would organize content without requiring real manga/manhwa uploads or a database.
+
+### 4.4 Data Privacy
+
+The current Figma prototype does not collect or store personal user information.
+
+If the application were developed further, it would need to consider how user accounts, saved series, reading history, and creator submissions are stored and protected.
+
+For the current project, all displayed data is fictional or placeholder content.
+
 
 ---
+
 
 ## 5) UI Specifications
-**5.1 Layouts per Screen**  
-_For each screen, specify: layout, spacing, breakpoints, and annotations._
 
-**5.2 Style Guide**
-- **Colors:** _Hex codes with roles (Primary, Background, Text, Error, etc.)_
-- **Typography:** _Heading sizes, body text, line-height_
-- **Iconography:** _Set used and sizes_
-- **Components:** _Buttons, inputs, cards, alerts (states: default/hover/focus/disabled/error)_
+### 5.1 Colour Scheme
+
+Our application uses a simple colour scheme with light backgrounds, dark text, and blue buttons to maintain a clean and consistent appearance.
+
+| Element | Colour | Hex Code |
+|---|---|---|
+| Background | Light Grey | `#F5F6F8` |
+| Cards and Input Fields | White | `#FFFFFF` |
+| Buttons | Muted Blue | `#4F6D9A` |
+| Main Text | Dark Blue-Grey | `#273244` |
+
+### 5.2 Typography
+
+The prototype uses readable text with larger, bold headings for screen titles and section names. Smaller text is used for descriptions, genres, and chapter information. Button labels are kept short and clear.
+
+### 5.3 Buttons and Navigation
+
+The application uses buttons for actions such as browsing series, starting chapters, and submitting comic information.
+
+A bottom navigation bar provides access to Home, Browse, Library, and Upload. Back buttons are also included on screens where users may need to return to a previous page.
+
+### 5.4 Layout and Components
+
+The prototype uses a consistent mobile layout with cards for series information, input fields for creator submissions, and placeholders for comic covers and panels.
+
+Spacing and positioning are kept consistent across the six screens to make the application easy to navigate.
+
+### 5.5 UI States and Feedback
+
+Buttons and navigation items use simple visual styles. Blue highlights are used for selected navigation options.
+
+Advanced features such as form validation, error messages, and upload confirmation are not implemented in the current Figma prototype.
+
 
 ---
+
 
 ## 6) Interaction Design
-**6.1 States & Behaviours**  
-- Loading, empty, success, error states with visuals and messaging  
-- Keyboard interactions and focus management
 
-**6.2 Microcopy**  
-_Errors, empty states, tooltips, button labels._
+### 6.1 Main Interactions
+
+The prototype demonstrates how readers and creators would interact with the application.
+
+| Interaction | Expected Behaviour |
+|---|---|
+| Browse Series | Opens the Browse screen to explore available manga/manhwa. |
+| Select Series | Opens the Series Details screen with a description and chapter list. |
+| Start Reading | Opens the Chapter Reader to view comic panels. |
+| Previous/Next Chapter | Represents moving between chapters. |
+| Library | Displays saved series and reading progress. |
+| Creator Portal | Displays a form for entering comic and chapter information. |
+
+### 6.2 Navigation
+
+A bottom navigation bar allows users to access Home, Browse, Library, and Upload. Back buttons are included on the Series Details and Chapter Reader screens.
+
+The design aims to make navigation simple and consistent across all six screens.
+
+### 6.3 Forms and Feedback
+
+The Creator Portal includes fields for entering comic information and a Submit button. The Browse screen also includes a search bar.
+
+These elements demonstrate the intended functionality but do not currently process user input. Features such as search results, form validation, and upload confirmations may be added in future development.
+
+### 6.4 Prototype Limitations
+
+The Figma prototype focuses on demonstrating screen layouts and user navigation. Features such as actual comic uploads, saved reading progress, and database storage are not implemented.
+
 
 ---
 
-## 7) System Overview (Lightweight)
-**7.1 Architecture (if applicable)**  
-- Client (framework), optional server/API, storage (if any)  
-- Diagram (image or ASCII)
 
-**7.2 External Services / APIs (if any)**  
-| Service | Purpose | Auth | Notes |
-|---|---|---|---|
+## 7) System Overview
+
+### 7.1 System Architecture
+
+The Archivists is a mobile application prototype designed in Figma. It demonstrates how readers can browse manga/manhwa, read chapters, and manage their library, while creators can submit comic information.
+
+The prototype consists of six screens that represent the main features of the application. It focuses on interface design and navigation rather than backend functionality.
+
+### 7.2 Tools and Technologies
+
+| Tool | Purpose |
+|---|---|
+| Figma | Designing the application screens and demonstrating user interactions. |
+| GitHub | Managing project files, documentation, and team collaboration. |
+| GitHub Wiki | Organizing project information and progress updates. |
+
+### 7.3 Data and Storage
+
+The prototype uses fictional series information and placeholder images to demonstrate how content would appear.
+
+No database, server, or user authentication system is implemented. Features such as saving reading progress, searching for comics, and uploading chapters are represented through the interface.
+
+### 7.4 Future Development
+
+If the project were developed into a functional application, additional components would be required for storing comic information, managing user accounts, saving reading progress, and processing creator uploads.
+
+For the current project, our focus is on creating a clear and understandable prototype.
+
 
 ---
 
