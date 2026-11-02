@@ -1,15 +1,15 @@
 # Team Design Document (with Figma)
 
 **Course:** CSSD1161 — Communication & Teamwork in Software Development  
-**Team:** The Archivists • **Repo:** _GitHub URL_ • **Term:** Fall 2026
-**Version:** 0.1 • **Last Updated:** 2026-11-01
+**Team:** The Archivists • **Repo:** [GitHub Repository](https://github.com/sylvia19ip/CSSD1161-TheArchivists)  • **Term:** Fall 2026
+**Version:** 0.2 • **Last Updated:** 2026-11-02
 
 ---
 
 ## 0) Revision History
 | Version | Date | Author | Summary of Changes |
 |---|---|---|---|
-| 0.1 | 2026-11-01 | Sylvia Ip | Initial draft |
+| 0.2 | 2026-11-02 | Prahalad Prasanna | Added Figma designs and screenshots, documented user flows, information architecture, UI specifications, interaction design, and system overview. |
 
 ---
 
