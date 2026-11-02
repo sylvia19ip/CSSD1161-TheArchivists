@@ -164,27 +164,27 @@ The following screenshots show the six main screens of our Figma prototype.
 
 **Home Screen**
 
-![Home Screen](../resources/design-document/home.png)
+![Home Screen](./resources/design-document/home.png)
 
 **Browse Series**
 
-![Browse Series](../resources/design-document/browse.png)
+![Browse Series](./resources/design-document/browse.png)
 
 **Series Details**
 
-![Series Details](../resources/design-document/series-details.png)
+![Series Details](./resources/design-document/series-details.png)
 
 **Chapter Reader**
 
-![Chapter Reader](../resources/design-document/chapter-reader.png)
+![Chapter Reader](./resources/design-document/chapter-reader.png)
 
 **Creator Portal**
 
-![Creator Portal](../resources/design-document/creator-portal.png)
+![Creator Portal](./resources/design-document/creator-portal.png)
 
 **My Library**
 
-![My Library](../resources/design-document/library.png)
+![My Library](./resources/design-document/library.png)
 
 
 ---
