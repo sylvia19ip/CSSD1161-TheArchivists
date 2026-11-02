@@ -11,7 +11,7 @@
 |---|---|---|---|
 | 0.1 | 2026-11-01 | Sylvia Ip | Initial draft |
 | 0.2 | 2026-11-02 | Prahalad Prasanna | Added Figma designs and screenshots, documented user flows, information architecture, UI specifications, interaction design, and system overview. |
-| 0.3 | 2026-11-02 | Sylvia Ip | Updated 6.2, 
+| 0.3 | 2026-11-02 | Sylvia Ip | Updated 6.2, completed sections 7-13 | 
 ---
 
 ## 1) Project Overview
