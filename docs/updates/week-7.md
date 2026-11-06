@@ -12,7 +12,7 @@
   - Alyssa Brown— alyb08@my.yorku.ca
   - Sylvia Ip— sylviaip@my.yorku.ca
   - Iven Yu— iven16@my.yorku.ca
-- **Update #2 : week-7   |   **Date:** 2026-11-05
+- **Update #2** : week-7   |   **Date:** 2026-11-05
 
 ---
 
@@ -51,5 +51,5 @@
 
 - **Repo (main):** https://github.com/sylvia19ip/CSSD1161-TheArchivists
 - **Wiki Home:** https://github.com/sylvia19ip/CSSD1161-TheArchivists/wiki
-- **This document (uploaded):** week-5.md
+- **This document (uploaded):** week-7.md
 - **Any notes for TA:** None
